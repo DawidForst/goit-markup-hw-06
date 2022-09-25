@@ -734,7 +734,7 @@ figure {
 .form-input {
   display: block;
   padding: 0 0 0 32px;
-  margin: 3px 20px 10px 15px;
+  margin: 3px 20px 10px 40px;
   height: 40px;
   width: 448px;
   border-radius: 4px;
@@ -755,15 +755,15 @@ figure {
 }
 .icon-position1 {
   top: 126px;
-  left: 52px;
+  left: 65px;
 }
 .icon-position2 {
   top: 192px;
-  left: 52px;
+  left: 65px;
 }
 .icon-position3 {
   top: 258px;
-  left: 51px;
+  left: 65px;
 }
 .form-comment {
   height: 120px;
@@ -783,6 +783,7 @@ figure {
   box-shadow: none;
   outline: none;
 }
+
 .form-hover:hover > .form-input,
 .form-hover:focus-within > .form-input,
 .form-hover:active > .form-input {
@@ -802,7 +803,7 @@ figure {
   position: absolute;
   width: 11px;
   height: 8px;
-  left: 48px;
+  left: 58px;
   top: 460px;
   z-index: 999;
   fill: var(--semi-text-color);
@@ -810,6 +811,8 @@ figure {
 }
 
 .terms-and-conditions {
+  display: flex;
+  margin-left: 70px;
   font-size: 14px;
   padding: 15px 0 20px 0;
 }
@@ -829,7 +832,7 @@ figure {
   height: 15px;
   width: 16px;
   top: 457px;
-  left: 45px;
+  left: 55px;
   border-radius: 2px;
   background-color: var(--semi-text-color);
   border: var(--h-color) 2px solid;
@@ -843,10 +846,10 @@ figure {
 }
 .link-terms:hover {
   color: var(--p-color);
-  cursor: pointer;
 }
 
 .button-order-service {
+  margin-left: 160px;
   background-color: var(--hover-links-color);
   border-radius: 4px;
   border-style: none;
@@ -867,7 +870,7 @@ figure {
 }
 
 .description {
-  margin-left: 15px;
+  margin-left: 40px;
   font-size: 12px;
 }
 
