@@ -73,8 +73,6 @@ body {
 .footer-contacts {
   width: 246px;
 }
-.main-section {
-}
 
 .section-portfolio {
   padding-top: 50px;
@@ -418,14 +416,14 @@ body {
 
 .main-img {
   padding-right: 30px;
-  padding-top: 50px;
   padding-bottom: 94px;
   display: flex;
   gap: 30px;
 }
-
+.figure {
+  height: 294px;
+}
 .main-img-last {
-  padding-top: 50px;
   display: flex;
 }
 
@@ -549,7 +547,7 @@ body {
 .footer-container {
   display: flex;
   flex-direction: row;
-  gap: 30;
+  gap: 30px;
   color: var(--button-color);
   margin-left: 215px;
 }
@@ -636,7 +634,7 @@ body {
 }
 
 .footer-header {
-  display: column;
+  display: block;
   font-weight: 700;
   color: var(--semi-text-color);
   text-transform: uppercase;
@@ -651,7 +649,7 @@ body {
 .footer-icons {
   display: flex;
   list-style: none;
-  margin-left: 70px;
+  margin-left: 82px;
   gap: 10px;
   padding: 0;
 }
@@ -732,7 +730,6 @@ figure {
   font-size: 20px;
   line-height: 2.3px;
   color: var(--h-color);
-  margin-left: 40px;
 }
 .form-input {
   display: block;
@@ -787,13 +784,17 @@ figure {
   outline: none;
 }
 .form-hover:hover > .form-input,
-.form-hover:focus > .form-input {
+.form-hover:focus-within > .form-input,
+.form-hover:active > .form-input {
   border: var(--hover-links-color) 1px solid;
   box-shadow: none;
   outline: none;
 }
 .form-hover:hover > .form-icons,
 .form-hover:focus > .form-icons {
+  fill: var(--hover-links-color);
+}
+.form-hover:focus-within {
   fill: var(--hover-links-color);
 }
 
